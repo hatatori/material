@@ -1,0 +1,88 @@
+<link rel="stylesheet" type="text/css" href="md.css">
+
+<style>
+	/**{padding: 0;margin: 0}*/
+
+	
+
+	/*textarea{
+		resize: none;
+		border:none;
+		box-shadow: 0px 0px 10px #ddd;
+	}
+*/
+	
+
+</style>
+
+<meta charset="utf-8">
+
+
+<button onclick='Menu2.toggle()'>Menu Fora</button>
+<br><br>
+<button onclick='Menu.on()'>on</button>
+<button onclick='Menu.off()'>off</button>
+<button onclick='Menu.toggle()'>toggle</button>
+
+<!-- estrutura -->
+<div class="md-menu-square">
+
+	<div class="md-menu-scroll">
+		Text 1
+	</div>
+
+	<div class="md-menu md-menu-out-on" id='ok'>
+		<div class="md-menu-in">
+			Text 2
+		</div>
+	</div>
+
+</div>
+
+<!-- menu da página inteira -->
+<div class="md-menu md-menu-out" id='ok2'>
+	<div class="md-menu-in">
+		<p>Clique no botão ou na tela preta de fundo para fechar o menu</p>
+		<button onclick='Menu2.toggle()'>Fechar</button><br>
+	</div>
+</div>
+
+<br>
+
+<br>
+<textarea spellcheck="false" style="width: 100%;
+height: 300;border: none;box-shadow: 0px 0px 10px #ddd; resize: none;outline: none">
+	
+<!-- bloco quadrado -->
+<div class="md-menu-square">
+
+	<!-- página do bloquinho -->
+	<div class="md-menu-scroll">
+		Text 1
+	</div>
+
+	<!-- menu do bloquinho -->
+	<div class="md-menu md-menu-out-on" id='ok'>
+		<div class="md-menu-in">
+			Text 2
+		</div>
+	</div>
+</div>
+
+<script>	
+	var Menu = new MenuJanela(ok)
+</script>
+
+</textarea>
+
+
+<script src='md.js'></script>
+
+<script>
+	
+
+	var Menu = new MenuJanela(ok)
+
+	var Menu2 = new MenuJanela(ok2)
+
+</script>

@@ -1,0 +1,66 @@
+<link rel="stylesheet" type="text/css" href="md.css">
+
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	ul{
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		list-style: none;
+		display: flex;
+	}
+
+	.menu a{
+		color: black;
+		text-decoration: none;
+		width: 100%;
+		height: 50;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu{
+		display: flex;
+		height: 100%;
+		overflow-y: auto;
+	}
+
+	iframe{
+		width: 100%;
+		height: 100%;
+		border:none;
+	}
+</style>
+
+<div class="menu" id='menu'>
+	<div style="width: 20%">
+		<ul>
+			<li><a href='#alert'>alert</a></li>
+			<li><a href='#button'>button</a></li>
+			<li><a href='#modal'>modal</a></li>
+			<li><a href='#showhide'>showhide</a></li>
+		</ul>
+	</div>
+	<div style="width: 80%">
+		<iframe id="ifr" src="button.html"></iframe>
+	</div>
+</div>
+
+
+
+<script src="md.js"></script>
+
+<script>
+	function atualizarLinks(){
+		link = window.location.href.split("#").pop()
+		ifr.src = link+".html"
+	}
+	menu.onmousedown=()=>{atualizarLinks()}
+	
+</script>

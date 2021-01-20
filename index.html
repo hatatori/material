@@ -1,0 +1,397 @@
+<style>
+
+
+	/*cores*/
+	.danger{
+		background-color: #c62828;
+		color: white;
+	}
+
+	.success{
+		background-color: #198754;
+		color: white;
+	}
+
+	.primary{
+		background-color: #0d6efd;
+		color: white;
+	}
+
+	.dark{
+		background-color: #212529;
+		color: white;
+	}
+
+	.light{
+		background-color: #efefef;
+		color: black;
+	}
+
+	/*button*/
+
+	.md-bt{
+		font-family: monospace;
+		font-size: 14;
+		outline: none;
+		font-weight: 500;
+		padding: 0px 8px;
+		border-radius: 4px;
+		border: solid 0px #6200ee;
+		height: 30;
+		transition: 0.2s;
+	}
+
+
+	.md-bt:hover{box-shadow: 0px 0px 5px rgba(0,0,0,.4);}
+
+	/*DIALOG*/
+
+	.md-dialog *{transition: 0.2s;}
+
+	.md-dialog{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.3);
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		visibility: hidden;
+	}
+
+
+	.md-dialog-content{
+		background-color: white;
+		border-radius: 3px;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+		padding: 10px;
+	}
+
+	.md-dialog-square{
+		width: 600;
+		height: 300;
+		max-width: 90%;
+		max-height: 90%;
+		overflow: auto;
+	}
+
+
+	.md-dialog-off{animation: fade-out 0.2s forwards;}
+	.md-dialog-on{animation: fade-in 0.2s forwards;}
+
+	.md-dialog-off > .md-dialog-content{animation: up 0.2s forwards;}
+	.md-dialog-on > .md-dialog-content{animation: down 0.2s forwards;}
+
+	.md-alerta *{transition: 0.3}
+
+	.md-alerta{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.3);
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.md-alerta-content{
+		background-color: white;
+		border-radius: 3px;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+		padding: 10;
+		max-height: 90%;
+		max-width: 90%;
+	}
+
+	.md-alerta-content > *{
+		max-height: 90vh;
+		max-width: 90vw;
+	}
+
+	
+	.md-alerta-off{ animation: fade-out 0.2s forwards; }
+	.md-alerta-on{ animation: fade-in 0.2s forwards; }
+
+	.md-alerta-off .md-alerta-content{animation: up 0.2s forwards}
+	.md-alerta-on .md-alerta-content{animation: down 0.2s forwards}
+
+
+	@keyframes fade-out{
+		0%{opacity: 1;visibility: visible;}
+		100%{opacity: 0;visibility: hidden;}
+	}
+
+	@keyframes fade-in{
+		0%{opacity: 0;visibility: hidden;}
+		100%{opacity: 1;visibility: visible;}
+	}
+
+	@keyframes down{
+		0%{margin-bottom: 50px}
+		100%{margin-bottom: 0px}
+	}
+
+	@keyframes up{
+		0%{margin-bottom: 0px}
+		100%{margin-bottom: 50px}
+	}
+
+</style>
+
+<!-- implementação -->
+<!-- <button class="md-bt" onclick="implementacao.dialog.open()">Implementação</button> -->
+
+<button class="md-bt" dialogopen="implementacao">Implementação</button>
+
+<div class="md-dialog" id="implementacao">
+	<div class="md-dialog-content md-dialog-square">
+		<h2>Implementação</h2>
+		<code>
+			
+			<script src="js.js"></script>
+		</code>
+		<!-- <button dialogclose="implementacao">fechar</button> -->
+	</div>
+</div>
+
+<!-- botões -->
+<button class="md-bt" dialogopen="botoes">Botoes</button>
+
+<div class="md-dialog" id="botoes">
+	<div class="md-dialog-content md-dialog-square" >
+		<h2>Botões</h2>
+		<button class="md-bt danger">DANGER</button>
+		<button class="md-bt success">SUCCESS</button>
+		<button class="md-bt primary">PRIMARY</button>
+		<button class="md-bt dark">DARK</button>
+		<button class="md-bt light">LIGHT</button>
+		<br><br>
+		<code>
+			<button class="md-bt danger">DANGER</button>
+			<button class="md-bt success">SUCCESS</button>
+			<button class="md-bt primary">PRIMARY</button>
+			<button class="md-bt dark">DARK</button>
+			<button class="md-bt light">LIGHT</button>
+		</code>
+	</div>
+</div>
+
+<!-- alert -->
+<button class="md-bt" dialogopen="alerts">Alertar</button>
+
+<div class="md-dialog" id="alerts">
+	<div class="md-dialog-content md-dialog-square">
+		<h2>Alertar</h2>
+		<button class="md-bt" alertar="Albert Einstein">Texto</button>
+		<button class="md-bt" alertar="<img src='cosplay.jpg'>">Imagens</button>
+		<code>
+			
+			<button class="md-bt" alertar="Albert Einstein">Texto</button>
+			<button class="md-bt" alertar="<img src='cosplay.jpg'>">Imagens</button>
+		</code>
+	</div>
+</div>
+
+<!-- dialog -->
+<button class="md-bt" dialogopen="dialog">dialog</button>
+
+<div class="md-dialog" id="dialog">
+	<div class="md-dialog-content md-dialog-square">
+		<h2>Dialog</h2>
+		<button class="md-bt primary" dialogopen="testando">Abrir novo</button>
+		<button class="md-bt primary" dialogclose="dialog">Fecha</button>
+		<button class="md-bt primary" dialogtoggle="dialog">Alterna</button>
+
+		<div class="md-dialog" id="testando">
+			<div class="md-dialog-content md-dialog-square">
+				<h2>Dialog</h2>
+				<button class="md-bt primary" dialogopen="testando">Abrir</button>
+				<button class="md-bt primary" dialogclose="testando">Fecha</button>
+				<button class="md-bt primary" dialogtoggle="testando">Alterna</button>
+				<p><img onclick="alertar('<img src=\'cosplay.jpg\'')" src="cosplay.jpg" width="100" style="float: left; padding: 10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu lacus scelerisque, interdum est vel, ullamcorper sem. Morbi vestibulum vitae sapien a sodales. Pellentesque laoreet euismod sem imperdiet suscipit. Praesent quis nulla ac eros facilisis luctus sit amet a ligula. Vestibulum dapibus euismod enim. Quisque aliquet condimentum elementum. Fusce in sapien ultricies, porttitor quam ac, mattis elit. Donec sit amet ipsum id nisl ornare consectetur nec ut massa. In in mi eget felis pharetra consectetur ut scelerisque diam. Vivamus eget nisl arcu. Praesent hendrerit risus et nisi iaculis ultrices. Donec sagittis elementum mauris, nec consequat urna sodales eget.
+					<br><br>
+				Vivamus molestie accumsan scelerisque. Donec enim eros, pellentesque eu placerat id, varius nec metus. Fusce libero nisi, semper nec velit ut, accumsan fermentum neque. Fusce ligula eros, tempus et neque vitae, imperdiet venenatis quam. Etiam eu ex vitae odio commodo hendrerit in ut neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas elementum magna ac maximus ultrices. Nunc ac augue velit. Praesent facilisis urna eget interdum placerat. Suspendisse dapibus vestibulum auctor. Aliquam placerat tempus felis, non tempus leo consectetur viverra.</p>
+			</div>
+		</div>
+
+
+		<code>
+
+			<button class="md-bt primary" dialogopen="dialog">Abrir</button>
+			<button class="md-bt primary" dialogclose="dialog">Fecha</button>
+			<button class="md-bt primary" dialogtoggle="dialog">Alterna</button>
+
+			<div class="md-dialog" id="dialog">
+				<div class="md-dialog-content md-dialog-square">
+				</div>
+			</div>
+		</code>
+
+
+	</div>
+</div>
+
+
+
+
+<!-- <button class="md-bt" onclick="box1.dialog.open()">Abrir</button>
+
+<div class="md-dialog" id="box1">
+	<div class="md-dialog-content" >
+		Mensagem simples
+		<button onclick="box1.dialog.close()">Fechar</button>
+	</div>
+</div>
+-->
+<!--
+<button onclick="box2.dialog.open()">Abrir</button>
+
+<div class="md-dialog" id="box2">
+	<div class="md-dialog-content md-dialog-square" >
+		
+		<p><img onclick="alertar('<img src=\'cosplay.jpg\'')" src="cosplay.jpg" width="100" style="float: left; padding: 10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu lacus scelerisque, interdum est vel, ullamcorper sem. Morbi vestibulum vitae sapien a sodales. Pellentesque laoreet euismod sem imperdiet suscipit. Praesent quis nulla ac eros facilisis luctus sit amet a ligula. Vestibulum dapibus euismod enim. Quisque aliquet condimentum elementum. Fusce in sapien ultricies, porttitor quam ac, mattis elit. Donec sit amet ipsum id nisl ornare consectetur nec ut massa. In in mi eget felis pharetra consectetur ut scelerisque diam. Vivamus eget nisl arcu. Praesent hendrerit risus et nisi iaculis ultrices. Donec sagittis elementum mauris, nec consequat urna sodales eget.
+			<br><br>
+		Vivamus molestie accumsan scelerisque. Donec enim eros, pellentesque eu placerat id, varius nec metus. Fusce libero nisi, semper nec velit ut, accumsan fermentum neque. Fusce ligula eros, tempus et neque vitae, imperdiet venenatis quam. Etiam eu ex vitae odio commodo hendrerit in ut neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas elementum magna ac maximus ultrices. Nunc ac augue velit. Praesent facilisis urna eget interdum placerat. Suspendisse dapibus vestibulum auctor. Aliquam placerat tempus felis, non tempus leo consectetur viverra.</p>
+	</div>
+</div>
+<br><br><br>
+botoes<br>
+<button class="md-bt-a">Botão a</button><br><br>
+<button class="md-bt-b">Botão b</button><br><br>
+<button class="md-bt-c danger">Botão c</button>
+-->
+
+
+<script>
+	
+	// DIALOG
+
+	class Dialog{
+
+		constructor(div){
+			this.div = div
+			this.inside = this.div.querySelector(".md-dialog-content")
+			
+			this.div.onclick=function(e){
+				this.close()
+			}.bind(this)
+
+			this.inside.onclick= e =>{e.stopPropagation()}
+		}
+
+		open(div){
+			this.div.classList.add("md-dialog-on")
+			this.div.classList.remove("md-dialog-off")
+		}
+
+		close(div){
+			this.div.classList.add("md-dialog-off")
+			this.div.classList.remove("md-dialog-on")
+		}
+
+		toggle(div){
+			if(this.div.classList.value.match("md-dialog-on"))
+				this.close()
+			else
+				this.open()
+		}
+
+	}
+
+	dialogs = document.querySelectorAll(".md-dialog")
+
+	for(i of dialogs){
+		i.dialog = new Dialog(document.querySelector("#"+i.id))
+	}
+
+	for(j of document.querySelectorAll("[dialogopen]")){
+		j.onclick=function(e){
+			document.querySelector("#"+this.getAttribute("dialogopen")).dialog.open()
+		}
+	}
+
+	for(j of document.querySelectorAll("[dialogclose]")){
+		j.onclick=function(e){
+			document.querySelector("#"+this.getAttribute("dialogclose")).dialog.close()
+		}
+	}
+
+	for(j of document.querySelectorAll("[dialogtoggle]")){
+		j.onclick=function(e){
+			document.querySelector("#"+this.getAttribute("dialogtoggle")).dialog.toggle()
+		}
+	}
+
+
+
+	// ALERTA
+
+	class Alerta{
+
+		constructor(div){
+			this.div = div
+			this.inside = this.div.querySelector(".md-alerta-content")
+			
+			this.div.onclick=function(e){
+				this.close()
+			}.bind(this)
+
+			this.inside.onclick=e=>{e.stopPropagation()}
+		}
+
+		open(div){
+			this.div.classList.add("md-alerta-on")
+			this.div.classList.remove("md-alert-off")
+		}
+
+		close(div){
+			this.div.classList.add("md-alerta-off")
+			this.div.classList.remove("md-alerta-on")	
+			setTimeout(function(){
+				this.div.remove()
+			}.bind(this),200)
+		}
+
+		toggle(div){
+			if(this.div.classList.value.match("md-alerta-on"))
+				this.close()
+			else
+				this.open()
+		}
+
+	}
+
+	function alertar(valor){
+
+		div = document.createElement("div")
+		div.classList.add("md-alerta")
+		div.innerHTML = "<div class='md-alerta-content'>"+valor+"</div>"
+		document.body.appendChild(div)
+		div.classList.add("md-alerta-on")
+
+		al = document.querySelectorAll(".md-alerta")
+
+		for(i of al){
+			i.alerta = new Alerta(i)
+		}
+	}
+
+	for(j of document.querySelectorAll("[alertar]")){
+		j.onclick=function(e){
+			alertar(this.getAttribute("alertar"))
+		}
+	}
+
+
+	// CODIGO
+	codigos = document.querySelectorAll("code")
+	for(i of codigos){
+		i.innerHTML = i.innerHTML.replace(/</g,"&lt;").replace(/\n/g,"<br>")
+	}
+
+
+</script>

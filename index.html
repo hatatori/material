@@ -38,7 +38,6 @@
 		border-radius: 4px;
 		border: solid 0px #6200ee;
 		height: 30;
-		transition: 0.2s;
 	}
 
 
@@ -59,6 +58,7 @@
 		justify-content: center;
 		align-items: center;
 		visibility: hidden;
+		display: none;
 	}
 
 
@@ -78,8 +78,8 @@
 	}
 
 
-	.md-dialog-off{animation: fade-out 0.2s forwards;}
-	.md-dialog-on{animation: fade-in 0.2s forwards;}
+	.md-dialog-off{animation: fade-out 0.2s forwards; display: flex;}
+	.md-dialog-on{animation: fade-in 0.2s forwards; display: flex;}
 
 	.md-dialog-off > .md-dialog-content{animation: up 0.2s forwards;}
 	.md-dialog-on > .md-dialog-content{animation: down 0.2s forwards;}
@@ -153,7 +153,6 @@
 	<div class="md-dialog-content md-dialog-square">
 		<h2>Implementação</h2>
 		<code>
-			
 			&lt;script src="https://hatatori.github.io/material/md.js">&lt;/script>
 		</code>
 		<!-- <button dialogclose="implementacao">fechar</button> -->
@@ -214,7 +213,7 @@
 				<button class="md-bt primary" dialogopen="testando">Abrir</button>
 				<button class="md-bt primary" dialogclose="testando">Fecha</button>
 				<button class="md-bt primary" dialogtoggle="testando">Alterna</button>
-				<p><img onclick="alertar('<img src=\'cosplay.jpg\'')" src="cosplay.jpg" width="100" style="float: left; padding: 10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu lacus scelerisque, interdum est vel, ullamcorper sem. Morbi vestibulum vitae sapien a sodales. Pellentesque laoreet euismod sem imperdiet suscipit. Praesent quis nulla ac eros facilisis luctus sit amet a ligula. Vestibulum dapibus euismod enim. Quisque aliquet condimentum elementum. Fusce in sapien ultricies, porttitor quam ac, mattis elit. Donec sit amet ipsum id nisl ornare consectetur nec ut massa. In in mi eget felis pharetra consectetur ut scelerisque diam. Vivamus eget nisl arcu. Praesent hendrerit risus et nisi iaculis ultrices. Donec sagittis elementum mauris, nec consequat urna sodales eget.
+				<p><img alertar="<img src='cosplay.jpg'>" src="cosplay.jpg" width="100" style="float: left; padding: 10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu lacus scelerisque, interdum est vel, ullamcorper sem. Morbi vestibulum vitae sapien a sodales. Pellentesque laoreet euismod sem imperdiet suscipit. Praesent quis nulla ac eros facilisis luctus sit amet a ligula. Vestibulum dapibus euismod enim. Quisque aliquet condimentum elementum. Fusce in sapien ultricies, porttitor quam ac, mattis elit. Donec sit amet ipsum id nisl ornare consectetur nec ut massa. In in mi eget felis pharetra consectetur ut scelerisque diam. Vivamus eget nisl arcu. Praesent hendrerit risus et nisi iaculis ultrices. Donec sagittis elementum mauris, nec consequat urna sodales eget.
 					<br><br>
 				Vivamus molestie accumsan scelerisque. Donec enim eros, pellentesque eu placerat id, varius nec metus. Fusce libero nisi, semper nec velit ut, accumsan fermentum neque. Fusce ligula eros, tempus et neque vitae, imperdiet venenatis quam. Etiam eu ex vitae odio commodo hendrerit in ut neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas elementum magna ac maximus ultrices. Nunc ac augue velit. Praesent facilisis urna eget interdum placerat. Suspendisse dapibus vestibulum auctor. Aliquam placerat tempus felis, non tempus leo consectetur viverra.</p>
 			</div>
@@ -237,163 +236,43 @@
 	</div>
 </div>
 
+<!-- showhide box -->
 
+<button class="md-bt" dialogtoggle="boxx">Box</button>
 
+<div class="md-dialog" id="boxx">
+	<div class="md-dialog-content md-dialog-square">
 
-<!-- <button class="md-bt" onclick="box1.dialog.open()">Abrir</button>
+		<h2>Box</h2>
 
-<div class="md-dialog" id="box1">
-	<div class="md-dialog-content" >
-		Mensagem simples
-		<button onclick="box1.dialog.close()">Fechar</button>
-	</div>
-</div>
--->
-<!--
-<button onclick="box2.dialog.open()">Abrir</button>
-
-<div class="md-dialog" id="box2">
-	<div class="md-dialog-content md-dialog-square" >
+		<button class="md-bt" boxopen="grupoA">Grupo A</button>
+		<button class="md-bt" boxopen="grupoB">Grupo B</button>
 		
-		<p><img onclick="alertar('<img src=\'cosplay.jpg\'')" src="cosplay.jpg" width="100" style="float: left; padding: 10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu lacus scelerisque, interdum est vel, ullamcorper sem. Morbi vestibulum vitae sapien a sodales. Pellentesque laoreet euismod sem imperdiet suscipit. Praesent quis nulla ac eros facilisis luctus sit amet a ligula. Vestibulum dapibus euismod enim. Quisque aliquet condimentum elementum. Fusce in sapien ultricies, porttitor quam ac, mattis elit. Donec sit amet ipsum id nisl ornare consectetur nec ut massa. In in mi eget felis pharetra consectetur ut scelerisque diam. Vivamus eget nisl arcu. Praesent hendrerit risus et nisi iaculis ultrices. Donec sagittis elementum mauris, nec consequat urna sodales eget.
-			<br><br>
-		Vivamus molestie accumsan scelerisque. Donec enim eros, pellentesque eu placerat id, varius nec metus. Fusce libero nisi, semper nec velit ut, accumsan fermentum neque. Fusce ligula eros, tempus et neque vitae, imperdiet venenatis quam. Etiam eu ex vitae odio commodo hendrerit in ut neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas elementum magna ac maximus ultrices. Nunc ac augue velit. Praesent facilisis urna eget interdum placerat. Suspendisse dapibus vestibulum auctor. Aliquam placerat tempus felis, non tempus leo consectetur viverra.</p>
+
+		<div class="md-box md-box-open" id="grupoA" style="text-align: center;">
+			<img src='cosplay.jpg' height="100" alertar="<img src='cosplay.jpg'>">
+			<img src='cosplay2.jpg' height="100" alertar="<img src='cosplay2.jpg'>">
+		</div>
+
+		<div class="md-box" id="grupoB">
+			<code>
+				Aberto
+				&lt;button class="md-bt" boxopen="Grupo">Nome&lt;/button>
+				&lt;div class="md-box" id="Grupo">
+				&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p>
+				&lt;/div>
+
+				Fechado
+				&lt;button class="md-bt" boxopen="Grupo">Nome&lt;/button>
+				&lt;div class="md-box md-box-close" id="Grupo">
+				&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p>
+				&lt;/div>
+			</code>
+		</div>
 	</div>
 </div>
-<br><br><br>
-botoes<br>
-<button class="md-bt-a">Botão a</button><br><br>
-<button class="md-bt-b">Botão b</button><br><br>
-<button class="md-bt-c danger">Botão c</button>
--->
-
-
-<script>
-	
-	// DIALOG
-
-	class Dialog{
-
-		constructor(div){
-			this.div = div
-			this.inside = this.div.querySelector(".md-dialog-content")
-			
-			this.div.onclick=function(e){
-				this.close()
-			}.bind(this)
-
-			this.inside.onclick= e =>{e.stopPropagation()}
-		}
-
-		open(div){
-			this.div.classList.add("md-dialog-on")
-			this.div.classList.remove("md-dialog-off")
-		}
-
-		close(div){
-			this.div.classList.add("md-dialog-off")
-			this.div.classList.remove("md-dialog-on")
-		}
-
-		toggle(div){
-			if(this.div.classList.value.match("md-dialog-on"))
-				this.close()
-			else
-				this.open()
-		}
-
-	}
-
-	dialogs = document.querySelectorAll(".md-dialog")
-
-	for(i of dialogs){
-		i.dialog = new Dialog(document.querySelector("#"+i.id))
-	}
-
-	for(j of document.querySelectorAll("[dialogopen]")){
-		j.onclick=function(e){
-			document.querySelector("#"+this.getAttribute("dialogopen")).dialog.open()
-		}
-	}
-
-	for(j of document.querySelectorAll("[dialogclose]")){
-		j.onclick=function(e){
-			document.querySelector("#"+this.getAttribute("dialogclose")).dialog.close()
-		}
-	}
-
-	for(j of document.querySelectorAll("[dialogtoggle]")){
-		j.onclick=function(e){
-			document.querySelector("#"+this.getAttribute("dialogtoggle")).dialog.toggle()
-		}
-	}
 
 
 
-	// ALERTA
 
-	class Alerta{
-
-		constructor(div){
-			this.div = div
-			this.inside = this.div.querySelector(".md-alerta-content")
-			
-			this.div.onclick=function(e){
-				this.close()
-			}.bind(this)
-
-			this.inside.onclick=e=>{e.stopPropagation()}
-		}
-
-		open(div){
-			this.div.classList.add("md-alerta-on")
-			this.div.classList.remove("md-alert-off")
-		}
-
-		close(div){
-			this.div.classList.add("md-alerta-off")
-			this.div.classList.remove("md-alerta-on")	
-			setTimeout(function(){
-				this.div.remove()
-			}.bind(this),200)
-		}
-
-		toggle(div){
-			if(this.div.classList.value.match("md-alerta-on"))
-				this.close()
-			else
-				this.open()
-		}
-
-	}
-
-	function alertar(valor){
-
-		div = document.createElement("div")
-		div.classList.add("md-alerta")
-		div.innerHTML = "<div class='md-alerta-content'>"+valor+"</div>"
-		document.body.appendChild(div)
-		div.classList.add("md-alerta-on")
-
-		al = document.querySelectorAll(".md-alerta")
-
-		for(i of al){
-			i.alerta = new Alerta(i)
-		}
-	}
-
-	for(j of document.querySelectorAll("[alertar]")){
-		j.onclick=function(e){
-			alertar(this.getAttribute("alertar"))
-		}
-	}
-
-
-	// CODIGO
-	codigos = document.querySelectorAll("code")
-	for(i of codigos){
-		i.innerHTML = i.innerHTML.replace(/</g,"&lt;").replace(/\n/g,"<br>")
-	}
-
-
-</script>
+<script src="md.js"></script>

@@ -1,0 +1,31 @@
+.dialog-out {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000055;
+    box-shadow: 0px 0px 3px #000000;
+    transition-duration: 150ms
+}
+
+.dialog-in {
+    border-radius: 0.25rem;
+    background-color: white;
+    padding: 0.5rem;
+    box-shadow: 0px 3px 10px #00000022;
+    transition-duration: 150ms
+}
+
+.hidden {display: none}
+.scale-75 {transform: scale(0.75)}
+.opacity-0 {opacity: 0}
+
+.square{
+    width: 430px;
+    height: 250px;
+    max-width: 90%;
+}

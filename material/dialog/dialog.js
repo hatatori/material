@@ -10,45 +10,30 @@ class Dialog{
     }
 
     init(){
-        this.a.classList.add('hidden','opacity-0')
-        this.b.classList.add('scale-75', 'opacity-0')
 
-        this.b.addEventListener('click', e=>e.stopPropagation())
-        this.a.addEventListener('click', e=>this.off())
+        this.b.addEventListener('click', e=>{
+            e.stopPropagation()
+        })
 
-        document.addEventListener('keyup', e=> {if(e.key == "Escape") {
-            document.querySelectorAll(".dialog-on")
-        }} )
+        this.a.addEventListener('click', e=>{
+            this.off()
+        })
     }
 
     off(){
-        this.a.classList.remove('dialog-on')
-        this.a.classList.add('opacity-0')
-        this.b.classList.add('scale-75', 'opacity-0')
-        setTimeout(()=>{ 
-            this.a.classList.add('hidden')
-        },150)
+        this.a.classList.add('dialog-off')
         this.is_opened = false
         dialog_r.pop()
     }
 
     on(){
-        this.a.classList.add('dialog-on')
-        this.a.classList.remove('hidden')
-        // this.b.classList.add('scale-75')
-        setTimeout(()=>{ 
-            this.a.classList.remove('opacity-0') 
-            this.b.classList.remove('scale-75', 'opacity-0')
-        },0)
+        this.a.classList.remove('dialog-off')
         this.is_opened = true
         dialog_r.push(this.a)
     }
 
     toggle(){
-        if(this.is_opened)
-            this.off()
-        else
-            this.on()
+        this.is_opened ? this.off() : this.on()
     }
 }
 

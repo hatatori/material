@@ -25,8 +25,23 @@
 .scale-75 {transform: scale(0.75)}
 .opacity-0 {opacity: 0}
 
-.square{
+.dialog-square{
     width: 430px;
     height: 250px;
     max-width: 90%;
+}
+
+.dialog-off{
+    opacity: 0;
+    animation: dialog-off 0.3s forwards;
+    animation-delay: 0.3s;
+}
+
+.dialog-off .dialog-in{
+    transform: scale(0.7);
+}
+
+@keyframes dialog-off{
+    0%{ visibility: hidden; }
+    100%{ visibility: hidden; }
 }

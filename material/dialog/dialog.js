@@ -11,6 +11,9 @@ class Dialog{
 
     init(){
 
+        if(this.a.classList.contains('dialog-on'))
+            dialog_r.push(this.a)
+
         this.b.addEventListener('click', e=>{
             e.stopPropagation()
         })
@@ -22,12 +25,16 @@ class Dialog{
 
     off(){
         this.a.classList.add('dialog-off')
+        this.a.classList.remove('dialog-on')
+
         this.is_opened = false
         dialog_r.pop()
     }
 
     on(){
+        this.a.classList.add('dialog-on')
         this.a.classList.remove('dialog-off')
+
         this.is_opened = true
         dialog_r.push(this.a)
     }

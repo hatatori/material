@@ -12,8 +12,6 @@
     transition-duration: 150ms;
     z-index: 10;
     display: none;
-    /* opacity: 0; */
-    /* animation: dialog-fade-out 0.5s forwards; */
 }
 
 .dialog > .dialog-in {
@@ -24,10 +22,6 @@
     transition-duration: 150ms;
     transform: scale(0.7);
 }
-
-.hidden {display: none}
-.scale-75 {transform: scale(0.75)}
-.opacity-0 {opacity: 0}
 
 .dialog-square{
     width: 430px;
@@ -54,7 +48,6 @@
 .dialog-off > .dialog-in{
     animation: dialog-zoom-out 150ms forwards;
 }
-
 
 @keyframes dialog-off{
     0%{ visibility: hidden; }

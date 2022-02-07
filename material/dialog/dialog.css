@@ -25,7 +25,7 @@
 
 .dialog-square{
     width: 430px;
-    height: 250px;
+    min-height: 250px;
     max-width: 90%;
 }
 

@@ -8,7 +8,7 @@ class Collapse {
     open() {
         this.el.isOpen = true
         this.el.style.transition = "0.5s"
-        this.el.style.height = ft.scrollHeight + "px"
+        this.el.style.height = this.el.scrollHeight + "px"
         this.el.ontransitionend = () => {
             this.el.style.removeProperty('transition')
             this.el.style.removeProperty('height')
@@ -18,7 +18,7 @@ class Collapse {
 
     close() {
         this.el.isOpen = false
-        this.el.style.height = ft.scrollHeight + "px"
+        this.el.style.height = this.el.scrollHeight + "px"
         this.el.style.transition = "0.5s"
         setTimeout(() => {
             this.el.style.height = 0 + 'px'

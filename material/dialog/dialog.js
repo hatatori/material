@@ -1,61 +1,57 @@
-const dialog_r = []
+"use strict"
 
 class Dialog{
 
     constructor(div){
-        this.a = div
-        this.b = this.a.querySelector(".dialog-in")
-        this.is_opened = false
-        this.init()
-    }
+        this.div = div
+        this.divin = div.querySelector('.dialog-in')
+        this.dialog_r = []
+        this.opened = false
 
-    init(){
+        if(this.div.classList.contains('dialog-on')) this.on()
+        
+        this.div.addEventListener('click', ()=>this.off())
+        this.divin.addEventListener('click', (e) => e.stopPropagation())
 
-        if(this.a.classList.contains('dialog-on'))
-            dialog_r.push(this.a)
-
-        this.b.addEventListener('click', e=>{
-            e.stopPropagation()
-        })
-
-        this.a.addEventListener('click', e=>{
-            this.off()
-        })
+        this.div.addEventListener('keyup', ()=>{ if(e.key == "Escape") this.removeLast() })
     }
 
     off(){
-        this.a.classList.add('dialog-off')
-        this.a.classList.remove('dialog-on')
-
-        this.is_opened = false
-        dialog_r.pop()
+        this.div.classList.remove('dialog-on')
+        this.div.classList.add('dialog-off')
+        this.dialog_r.pop(this.div)
+        this.opened = false
     }
 
     on(){
-        this.a.classList.add('dialog-on')
-        this.a.classList.remove('dialog-off')
-
-        this.is_opened = true
-        dialog_r.push(this.a)
+        this.div.classList.remove('dialog-off')
+        this.div.classList.add('dialog-on')
+        this.dialog_r.push(this.div)
+        this.opened = true
     }
 
-    toggle(){
-        this.is_opened ? this.off() : this.on()
+    toogle(){
+        if(this.opened)
+           this.off()
+        else 
+            this.on()
+    }
+
+    removeLast(){
+        this.dialog_r.at(-1).dialog.off()
+    }
+
+    static init(){
+
+        for(let i of document.querySelectorAll('.dialog'))
+            i.dialog = new Dialog(i)
+    
+        for(let i of document.querySelectorAll('[dialog]')){
+            i.addEventListener('click', ()=>{
+                document.querySelector(i.getAttribute('dialog')).dialog.toogle()
+            })
+        }
     }
 }
 
-window.addEventListener('keyup',e=>{
-    if(e.key == 'Escape' && dialog_r.length > 0)
-        dialog_r[dialog_r.length-1].dialog.off()
-})
-
-for(i of document.querySelectorAll(".dialog")){
-    i.dialog = new Dialog(i)
-}
-
-for(i of document.querySelectorAll("[dialog]")){
-    i.addEventListener('click', function(){
-        document.querySelector(this.getAttribute("dialog")).dialog.toggle()
-    })
-}
-
+Dialog.init()

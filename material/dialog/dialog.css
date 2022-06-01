@@ -1,75 +1,63 @@
+.dialog-mid::-webkit-scrollbar { width: 5px; }
+.dialog-mid::-webkit-scrollbar-track { background: transparent; }
+.dialog-mid::-webkit-scrollbar-thumb { background: #00000022; }
+
 .dialog{
-    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     top: 0px;
     left: 0px;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
     background-color: #00000055;
-    box-shadow: 0px 0px 3px #000000;
-    transition-duration: 150ms;
-    z-index: 10;
     display: none;
 }
 
-.dialog > .dialog-in {
-    border-radius: 0.25rem;
-    background-color: white;
-    padding: 0.5rem;
-    box-shadow: 0px 3px 10px #00000022;
-    transition-duration: 150ms;
-    transform: scale(0.7);
-}
+.dialog-in{ background-color: white; }
 
 .dialog-square{
-    width: 430px;
-    min-height: 250px;
+    width: 500px;
+    height: 280px;
     max-width: 90%;
-}
-
-/* on */
-
-.dialog-on{
+    max-height: 90%;
+    border-radius: 0.5em;
     display: flex;
-    animation: dialog-fade-in 150ms forwards;
+    flex-direction: column;
 }
 
-.dialog-on > .dialog-in{
-    animation: dialog-zoom-in 150ms forwards;
+.dialog-top{ box-shadow: 0px 1px 0px 0px #00000015; }
+.dialog-bot{ box-shadow: 0px -1px 0px 0px #00000015; }
+
+.dialog-mid{ overflow: auto; }
+.dialog-bot, .dialog-mid, .dialog-top{ padding: 10px; }
+.dialog-mid{ flex: 1 }
+
+.dialog-on{ display: flex; animation: dialog-fade-in 0.3s; pointer-events: initial; }
+.dialog-on > .dialog-in{animation: dialog-zoom-in 0.3s}
+
+.dialog-off{ display: flex; animation: dialog-fade-out 0.3s forwards; pointer-events: none; }
+.dialog-off > .dialog-in{animation: dialog-zoom-out 0.3s forwards}
+
+
+@keyframes dialog-zoom-in{ 
+    0%{transform: scale(0.5);} 
+    100%{transform: scale(1);} 
 }
 
-.dialog-off{
-    display: flex;
-    animation: dialog-fade-out 150ms forwards;
+@keyframes dialog-zoom-out{ 
+    0%{transform: scale(1);} 
+    100%{transform: scale(0.5);} 
 }
 
-.dialog-off > .dialog-in{
-    animation: dialog-zoom-out 150ms forwards;
+@keyframes dialog-fade-in{ 
+    0%{ opacity: 0; visibility: visible; }
+    100%{ opacity: 1; } 
 }
 
-@keyframes dialog-off{
-    0%{ visibility: hidden; }
-    100%{ visibility: hidden; }
+@keyframes dialog-fade-out{ 
+    0%{opacity: 1;} 
+    100%{opacity: 0; visibility: hidden; } 
 }
 
-@keyframes dialog-fade-out{
-    0%{opacity: 1; }
-    100%{opacity: 0; visibility: hidden; }
-}
-
-@keyframes dialog-fade-in{
-    0%{opacity: 0; visibility: visible; }
-    100%{opacity: 1; }
-}
-
-@keyframes dialog-zoom-in{
-    0%{ transform: scale(0.7); }
-    100%{ transform: scale(1); }
-}
-
-@keyframes dialog-zoom-out{
-    0%{ transform: scale(1); }
-    100%{ transform: scale(0.7); }
-}

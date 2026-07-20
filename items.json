@@ -1,0 +1,1180 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "title": "Logitech Cloud II",
+            "brand": "Logitech",
+            "price": 100.41,
+            "category": "headset",
+            "img_number": 0
+        },
+        {
+            "id": 2,
+            "title": "SteelSeries Cloud Stinger",
+            "brand": "SteelSeries",
+            "price": 280.71,
+            "category": "headset",
+            "img_number": 1
+        },
+        {
+            "id": 3,
+            "title": "HyperX G435",
+            "brand": "HyperX",
+            "price": 683.81,
+            "category": "headset",
+            "img_number": 2
+        },
+        {
+            "id": 4,
+            "title": "Multilaser G433",
+            "brand": "Multilaser",
+            "price": 151.19,
+            "category": "headset",
+            "img_number": 3
+        },
+        {
+            "id": 5,
+            "title": "Sony BlackShark V2",
+            "brand": "Sony",
+            "price": 105.96,
+            "category": "headset",
+            "img_number": 4
+        },
+        {
+            "id": 6,
+            "title": "Logitech Arctis 7",
+            "brand": "Logitech",
+            "price": 259.18,
+            "category": "headset",
+            "img_number": 5
+        },
+        {
+            "id": 7,
+            "title": "Multilaser HS35",
+            "brand": "Multilaser",
+            "price": 573.56,
+            "category": "headset",
+            "img_number": 6
+        },
+        {
+            "id": 8,
+            "title": "Multilaser HS50",
+            "brand": "Multilaser",
+            "price": 242.95,
+            "category": "headset",
+            "img_number": 7
+        },
+        {
+            "id": 9,
+            "title": "Multilaser WH-1000XM4",
+            "brand": "Multilaser",
+            "price": 423.91,
+            "category": "headset",
+            "img_number": 8
+        },
+        {
+            "id": 10,
+            "title": "Philips Kraken X",
+            "brand": "Philips",
+            "price": 563.1,
+            "category": "headset",
+            "img_number": 9
+        },
+        {
+            "id": 11,
+            "title": "JBL Void Pro",
+            "brand": "JBL",
+            "price": 702.12,
+            "category": "headset",
+            "img_number": 10
+        },
+        {
+            "id": 12,
+            "title": "HyperX Cloud Alpha",
+            "brand": "HyperX",
+            "price": 652.37,
+            "category": "headset",
+            "img_number": 11
+        },
+        {
+            "id": 13,
+            "title": "Corsair G Pro X",
+            "brand": "Corsair",
+            "price": 307.75,
+            "category": "headset",
+            "img_number": 12
+        },
+        {
+            "id": 14,
+            "title": "Razer Barracuda X",
+            "brand": "Razer",
+            "price": 864.81,
+            "category": "headset",
+            "img_number": 13
+        },
+        {
+            "id": 15,
+            "title": "Corsair Arctis Nova 7",
+            "brand": "Corsair",
+            "price": 163.71,
+            "category": "headset",
+            "img_number": 14
+        },
+        {
+            "id": 16,
+            "title": "Sony Tune 500BT",
+            "brand": "Sony",
+            "price": 159.21,
+            "category": "headset",
+            "img_number": 15
+        },
+        {
+            "id": 17,
+            "title": "Corsair Fenir Wireless",
+            "brand": "Corsair",
+            "price": 574.96,
+            "category": "headset",
+            "img_number": 16
+        },
+        {
+            "id": 18,
+            "title": "JBL Cloud Flight",
+            "brand": "JBL",
+            "price": 678.28,
+            "category": "headset",
+            "img_number": 17
+        },
+        {
+            "id": 19,
+            "title": "Multilaser G935",
+            "brand": "Multilaser",
+            "price": 182.26,
+            "category": "headset",
+            "img_number": 18
+        },
+        {
+            "id": 20,
+            "title": "Sony Kraken V3",
+            "brand": "Sony",
+            "price": 144.52,
+            "category": "headset",
+            "img_number": 19
+        },
+        {
+            "id": 21,
+            "title": "SteelSeries Nova Pro",
+            "brand": "SteelSeries",
+            "price": 760.01,
+            "category": "headset",
+            "img_number": 20
+        },
+        {
+            "id": 22,
+            "title": "Microsoft K120",
+            "brand": "Microsoft",
+            "price": 715.13,
+            "category": "keyboard",
+            "img_number": 0
+        },
+        {
+            "id": 23,
+            "title": "SteelSeries K380",
+            "brand": "SteelSeries",
+            "price": 487.14,
+            "category": "keyboard",
+            "img_number": 1
+        },
+        {
+            "id": 24,
+            "title": "Redragon Alloy FPS",
+            "brand": "Redragon",
+            "price": 93.81,
+            "category": "keyboard",
+            "img_number": 2
+        },
+        {
+            "id": 25,
+            "title": "Razer BlackWidow V3",
+            "brand": "Razer",
+            "price": 631.97,
+            "category": "keyboard",
+            "img_number": 3
+        },
+        {
+            "id": 26,
+            "title": "Redragon K95 RGB",
+            "brand": "Redragon",
+            "price": 692.84,
+            "category": "keyboard",
+            "img_number": 4
+        },
+        {
+            "id": 27,
+            "title": "Redragon Apex Pro",
+            "brand": "Redragon",
+            "price": 341.19,
+            "category": "keyboard",
+            "img_number": 5
+        },
+        {
+            "id": 28,
+            "title": "Fortrek Kumara K552",
+            "brand": "Fortrek",
+            "price": 530.31,
+            "category": "keyboard",
+            "img_number": 6
+        },
+        {
+            "id": 29,
+            "title": "SteelSeries K552 Kumara",
+            "brand": "SteelSeries",
+            "price": 180.26,
+            "category": "keyboard",
+            "img_number": 7
+        },
+        {
+            "id": 30,
+            "title": "SteelSeries Fizz Mecanico",
+            "brand": "SteelSeries",
+            "price": 214.94,
+            "category": "keyboard",
+            "img_number": 8
+        },
+        {
+            "id": 31,
+            "title": "Corsair G Pro X",
+            "brand": "Corsair",
+            "price": 579.25,
+            "category": "keyboard",
+            "img_number": 9
+        },
+        {
+            "id": 32,
+            "title": "Redragon K845",
+            "brand": "Redragon",
+            "price": 510.66,
+            "category": "keyboard",
+            "img_number": 10
+        },
+        {
+            "id": 33,
+            "title": "HyperX Alloy Origins",
+            "brand": "HyperX",
+            "price": 455.16,
+            "category": "keyboard",
+            "img_number": 11
+        },
+        {
+            "id": 34,
+            "title": "Razer Huntsman Elite",
+            "brand": "Razer",
+            "price": 180.82,
+            "category": "keyboard",
+            "img_number": 12
+        },
+        {
+            "id": 35,
+            "title": "Multilaser K70 RGB",
+            "brand": "Multilaser",
+            "price": 259.66,
+            "category": "keyboard",
+            "img_number": 13
+        },
+        {
+            "id": 36,
+            "title": "Dell Apex 3",
+            "brand": "Dell",
+            "price": 222.42,
+            "category": "keyboard",
+            "img_number": 14
+        },
+        {
+            "id": 37,
+            "title": "SteelSeries Mini Fila RGB",
+            "brand": "SteelSeries",
+            "price": 683.61,
+            "category": "keyboard",
+            "img_number": 15
+        },
+        {
+            "id": 38,
+            "title": "Logitech K835",
+            "brand": "Logitech",
+            "price": 229.4,
+            "category": "keyboard",
+            "img_number": 16
+        },
+        {
+            "id": 39,
+            "title": "Logitech Cloud Key",
+            "brand": "Logitech",
+            "price": 655.63,
+            "category": "keyboard",
+            "img_number": 17
+        },
+        {
+            "id": 40,
+            "title": "Multilaser ONE 2 TKL",
+            "brand": "Multilaser",
+            "price": 258.03,
+            "category": "keyboard",
+            "img_number": 18
+        },
+        {
+            "id": 41,
+            "title": "Razer Ducky One 3",
+            "brand": "Razer",
+            "price": 735.62,
+            "category": "keyboard",
+            "img_number": 19
+        },
+        {
+            "id": 42,
+            "title": "Microsoft Vulcan 121",
+            "brand": "Microsoft",
+            "price": 708.41,
+            "category": "keyboard",
+            "img_number": 20
+        },
+        {
+            "id": 43,
+            "title": "Acer 24GL600",
+            "brand": "Acer",
+            "price": 1137.78,
+            "category": "monitor",
+            "img_number": 0
+        },
+        {
+            "id": 44,
+            "title": "ViewSonic Odyssey G5",
+            "brand": "ViewSonic",
+            "price": 1686.8,
+            "category": "monitor",
+            "img_number": 1
+        },
+        {
+            "id": 45,
+            "title": "ViewSonic 24G2SPU",
+            "brand": "ViewSonic",
+            "price": 928.51,
+            "category": "monitor",
+            "img_number": 2
+        },
+        {
+            "id": 46,
+            "title": "AOC S2421HGF",
+            "brand": "AOC",
+            "price": 1239.78,
+            "category": "monitor",
+            "img_number": 3
+        },
+        {
+            "id": 47,
+            "title": "Philips TUF Gaming VG249",
+            "brand": "Philips",
+            "price": 2116.83,
+            "category": "monitor",
+            "img_number": 4
+        },
+        {
+            "id": 48,
+            "title": "Gigabyte Nitro XV240",
+            "brand": "Gigabyte",
+            "price": 1785.2,
+            "category": "monitor",
+            "img_number": 5
+        },
+        {
+            "id": 49,
+            "title": "Gigabyte GW2480",
+            "brand": "Gigabyte",
+            "price": 1698.1,
+            "category": "monitor",
+            "img_number": 6
+        },
+        {
+            "id": 50,
+            "title": "Dell VX2458",
+            "brand": "Dell",
+            "price": 3491.88,
+            "category": "monitor",
+            "img_number": 7
+        },
+        {
+            "id": 51,
+            "title": "AOC 242E1GAJ",
+            "brand": "AOC",
+            "price": 2028.48,
+            "category": "monitor",
+            "img_number": 8
+        },
+        {
+            "id": 52,
+            "title": "Samsung M27Q",
+            "brand": "Samsung",
+            "price": 2767.25,
+            "category": "monitor",
+            "img_number": 9
+        },
+        {
+            "id": 53,
+            "title": "Samsung 27GL650",
+            "brand": "Samsung",
+            "price": 958.42,
+            "category": "monitor",
+            "img_number": 10
+        },
+        {
+            "id": 54,
+            "title": "AOC Odyssey G7",
+            "brand": "AOC",
+            "price": 2876.14,
+            "category": "monitor",
+            "img_number": 11
+        },
+        {
+            "id": 55,
+            "title": "BenQ C24G1",
+            "brand": "BenQ",
+            "price": 2289.13,
+            "category": "monitor",
+            "img_number": 12
+        },
+        {
+            "id": 56,
+            "title": "BenQ UltraSharp U2419H",
+            "brand": "BenQ",
+            "price": 1644.76,
+            "category": "monitor",
+            "img_number": 13
+        },
+        {
+            "id": 57,
+            "title": "ViewSonic ROG Swift PG259QN",
+            "brand": "ViewSonic",
+            "price": 2087.24,
+            "category": "monitor",
+            "img_number": 14
+        },
+        {
+            "id": 58,
+            "title": "Philips ED273",
+            "brand": "Philips",
+            "price": 3082.24,
+            "category": "monitor",
+            "img_number": 15
+        },
+        {
+            "id": 59,
+            "title": "LG EX2510",
+            "brand": "LG",
+            "price": 2540.75,
+            "category": "monitor",
+            "img_number": 16
+        },
+        {
+            "id": 60,
+            "title": "Samsung VA2432",
+            "brand": "Samsung",
+            "price": 2545.03,
+            "category": "monitor",
+            "img_number": 17
+        },
+        {
+            "id": 61,
+            "title": "Philips 278E1A",
+            "brand": "Philips",
+            "price": 2752.53,
+            "category": "monitor",
+            "img_number": 18
+        },
+        {
+            "id": 62,
+            "title": "Acer G27F",
+            "brand": "Acer",
+            "price": 834.56,
+            "category": "monitor",
+            "img_number": 19
+        },
+        {
+            "id": 63,
+            "title": "BenQ 24GN600",
+            "brand": "BenQ",
+            "price": 974.37,
+            "category": "monitor",
+            "img_number": 20
+        },
+        {
+            "id": 64,
+            "title": "Logitech G Pro X Superlight",
+            "brand": "Logitech",
+            "price": 574.04,
+            "category": "mouse",
+            "img_number": 0
+        },
+        {
+            "id": 65,
+            "title": "Corsair DeathAdder V2",
+            "brand": "Corsair",
+            "price": 584.16,
+            "category": "mouse",
+            "img_number": 1
+        },
+        {
+            "id": 66,
+            "title": "HyperX Pulsefire Haste",
+            "brand": "HyperX",
+            "price": 324.2,
+            "category": "mouse",
+            "img_number": 2
+        },
+        {
+            "id": 67,
+            "title": "Razer Cobra",
+            "brand": "Razer",
+            "price": 527.39,
+            "category": "mouse",
+            "img_number": 3
+        },
+        {
+            "id": 68,
+            "title": "Corsair M65 RGB Elite",
+            "brand": "Corsair",
+            "price": 511.23,
+            "category": "mouse",
+            "img_number": 4
+        },
+        {
+            "id": 69,
+            "title": "Fortrek Rival 3",
+            "brand": "Fortrek",
+            "price": 380.92,
+            "category": "mouse",
+            "img_number": 5
+        },
+        {
+            "id": 70,
+            "title": "HyperX G203",
+            "brand": "HyperX",
+            "price": 249.29,
+            "category": "mouse",
+            "img_number": 6
+        },
+        {
+            "id": 71,
+            "title": "HyperX G502 Hero",
+            "brand": "HyperX",
+            "price": 341.95,
+            "category": "mouse",
+            "img_number": 7
+        },
+        {
+            "id": 72,
+            "title": "Fortrek Basilisk V3",
+            "brand": "Fortrek",
+            "price": 554.26,
+            "category": "mouse",
+            "img_number": 8
+        },
+        {
+            "id": 73,
+            "title": "Dell Viper Mini",
+            "brand": "Dell",
+            "price": 221.43,
+            "category": "mouse",
+            "img_number": 9
+        },
+        {
+            "id": 74,
+            "title": "Logitech MX Master 3",
+            "brand": "Logitech",
+            "price": 102.55,
+            "category": "mouse",
+            "img_number": 10
+        },
+        {
+            "id": 75,
+            "title": "SteelSeries G305",
+            "brand": "SteelSeries",
+            "price": 531.98,
+            "category": "mouse",
+            "img_number": 11
+        },
+        {
+            "id": 76,
+            "title": "Corsair Fang",
+            "brand": "Corsair",
+            "price": 173.99,
+            "category": "mouse",
+            "img_number": 12
+        },
+        {
+            "id": 77,
+            "title": "Redragon Nemeanlion 2",
+            "brand": "Redragon",
+            "price": 531.59,
+            "category": "mouse",
+            "img_number": 13
+        },
+        {
+            "id": 78,
+            "title": "Razer Sabre RGB Pro",
+            "brand": "Razer",
+            "price": 87.87,
+            "category": "mouse",
+            "img_number": 14
+        },
+        {
+            "id": 79,
+            "title": "Multilaser Aerox 3",
+            "brand": "Multilaser",
+            "price": 496.87,
+            "category": "mouse",
+            "img_number": 15
+        },
+        {
+            "id": 80,
+            "title": "Fortrek G Pro Wireless",
+            "brand": "Fortrek",
+            "price": 468.77,
+            "category": "mouse",
+            "img_number": 16
+        },
+        {
+            "id": 81,
+            "title": "HyperX Naga Trinity",
+            "brand": "HyperX",
+            "price": 409.36,
+            "category": "mouse",
+            "img_number": 17
+        },
+        {
+            "id": 82,
+            "title": "Fortrek M100",
+            "brand": "Fortrek",
+            "price": 132.37,
+            "category": "mouse",
+            "img_number": 18
+        },
+        {
+            "id": 83,
+            "title": "Fortrek Kova",
+            "brand": "Fortrek",
+            "price": 528.46,
+            "category": "mouse",
+            "img_number": 19
+        },
+        {
+            "id": 84,
+            "title": "Microsoft Pulsefire Core",
+            "brand": "Microsoft",
+            "price": 579.94,
+            "category": "mouse",
+            "img_number": 20
+        },
+        {
+            "id": 85,
+            "title": "Multilaser Inspiron 15",
+            "brand": "Multilaser",
+            "price": 7262.28,
+            "category": "notebook",
+            "img_number": 0
+        },
+        {
+            "id": 86,
+            "title": "Asus IdeaPad 3",
+            "brand": "Asus",
+            "price": 6961.84,
+            "category": "notebook",
+            "img_number": 1
+        },
+        {
+            "id": 87,
+            "title": "Positivo Aspire 5",
+            "brand": "Positivo",
+            "price": 8965.46,
+            "category": "notebook",
+            "img_number": 2
+        },
+        {
+            "id": 88,
+            "title": "Samsung Vivobook 15",
+            "brand": "Samsung",
+            "price": 5010.41,
+            "category": "notebook",
+            "img_number": 3
+        },
+        {
+            "id": 89,
+            "title": "Multilaser Pavilion 14",
+            "brand": "Multilaser",
+            "price": 5105.45,
+            "category": "notebook",
+            "img_number": 4
+        },
+        {
+            "id": 90,
+            "title": "Asus Galaxy Book",
+            "brand": "Asus",
+            "price": 3495.25,
+            "category": "notebook",
+            "img_number": 5
+        },
+        {
+            "id": 91,
+            "title": "Samsung Motion Q464C",
+            "brand": "Samsung",
+            "price": 2049.24,
+            "category": "notebook",
+            "img_number": 6
+        },
+        {
+            "id": 92,
+            "title": "Multilaser MacBook Air M1",
+            "brand": "Multilaser",
+            "price": 3533.71,
+            "category": "notebook",
+            "img_number": 7
+        },
+        {
+            "id": 93,
+            "title": "Asus Legend Z",
+            "brand": "Asus",
+            "price": 1950.95,
+            "category": "notebook",
+            "img_number": 8
+        },
+        {
+            "id": 94,
+            "title": "Dell FE14",
+            "brand": "Dell",
+            "price": 3525.39,
+            "category": "notebook",
+            "img_number": 9
+        },
+        {
+            "id": 95,
+            "title": "Dell XPS 13",
+            "brand": "Dell",
+            "price": 8003.31,
+            "category": "notebook",
+            "img_number": 10
+        },
+        {
+            "id": 96,
+            "title": "Lenovo ThinkPad E14",
+            "brand": "Lenovo",
+            "price": 5550.41,
+            "category": "notebook",
+            "img_number": 11
+        },
+        {
+            "id": 97,
+            "title": "HP Nitro 5",
+            "brand": "HP",
+            "price": 6649.64,
+            "category": "notebook",
+            "img_number": 12
+        },
+        {
+            "id": 98,
+            "title": "Asus ROG Strix G15",
+            "brand": "Asus",
+            "price": 5728.46,
+            "category": "notebook",
+            "img_number": 13
+        },
+        {
+            "id": 99,
+            "title": "Vaio Omen 16",
+            "brand": "Vaio",
+            "price": 5991.0,
+            "category": "notebook",
+            "img_number": 14
+        },
+        {
+            "id": 100,
+            "title": "Asus Book Go",
+            "brand": "Asus",
+            "price": 7470.7,
+            "category": "notebook",
+            "img_number": 15
+        },
+        {
+            "id": 101,
+            "title": "Positivo Duo C4128",
+            "brand": "Positivo",
+            "price": 3251.81,
+            "category": "notebook",
+            "img_number": 16
+        },
+        {
+            "id": 102,
+            "title": "Lenovo MacBook Pro 13",
+            "brand": "Lenovo",
+            "price": 6578.68,
+            "category": "notebook",
+            "img_number": 17
+        },
+        {
+            "id": 103,
+            "title": "Samsung VJFE41",
+            "brand": "Samsung",
+            "price": 4907.31,
+            "category": "notebook",
+            "img_number": 18
+        },
+        {
+            "id": 104,
+            "title": "Apple Predator Helios 300",
+            "brand": "Apple",
+            "price": 8033.14,
+            "category": "notebook",
+            "img_number": 19
+        },
+        {
+            "id": 105,
+            "title": "Dell Chromebook Duet",
+            "brand": "Dell",
+            "price": 6680.79,
+            "category": "notebook",
+            "img_number": 20
+        },
+        {
+            "id": 106,
+            "title": "Motorola Galaxy S21",
+            "brand": "Motorola",
+            "price": 1142.37,
+            "category": "smartphone",
+            "img_number": 0
+        },
+        {
+            "id": 107,
+            "title": "Asus Moto G60",
+            "brand": "Asus",
+            "price": 6544.23,
+            "category": "smartphone",
+            "img_number": 1
+        },
+        {
+            "id": 108,
+            "title": "Motorola iPhone 13",
+            "brand": "Motorola",
+            "price": 2515.09,
+            "category": "smartphone",
+            "img_number": 2
+        },
+        {
+            "id": 109,
+            "title": "Xiaomi Redmi Note 11",
+            "brand": "Xiaomi",
+            "price": 4614.79,
+            "category": "smartphone",
+            "img_number": 3
+        },
+        {
+            "id": 110,
+            "title": "Apple Galaxy A52",
+            "brand": "Apple",
+            "price": 3779.64,
+            "category": "smartphone",
+            "img_number": 4
+        },
+        {
+            "id": 111,
+            "title": "LG Zenfone 8",
+            "brand": "LG",
+            "price": 4077.08,
+            "category": "smartphone",
+            "img_number": 5
+        },
+        {
+            "id": 112,
+            "title": "Motorola Realme 8",
+            "brand": "Motorola",
+            "price": 3934.75,
+            "category": "smartphone",
+            "img_number": 6
+        },
+        {
+            "id": 113,
+            "title": "Multilaser G20",
+            "brand": "Multilaser",
+            "price": 1414.63,
+            "category": "smartphone",
+            "img_number": 7
+        },
+        {
+            "id": 114,
+            "title": "Multilaser F Pro",
+            "brand": "Multilaser",
+            "price": 6802.9,
+            "category": "smartphone",
+            "img_number": 8
+        },
+        {
+            "id": 115,
+            "title": "Motorola Pixel 6",
+            "brand": "Motorola",
+            "price": 7462.38,
+            "category": "smartphone",
+            "img_number": 9
+        },
+        {
+            "id": 116,
+            "title": "Xiaomi Galaxy S22",
+            "brand": "Xiaomi",
+            "price": 1913.97,
+            "category": "smartphone",
+            "img_number": 10
+        },
+        {
+            "id": 117,
+            "title": "Nokia Moto Edge 20",
+            "brand": "Nokia",
+            "price": 4213.82,
+            "category": "smartphone",
+            "img_number": 11
+        },
+        {
+            "id": 118,
+            "title": "Realme iPhone 12",
+            "brand": "Realme",
+            "price": 7287.73,
+            "category": "smartphone",
+            "img_number": 12
+        },
+        {
+            "id": 119,
+            "title": "Apple Redmi 10",
+            "brand": "Apple",
+            "price": 3466.4,
+            "category": "smartphone",
+            "img_number": 13
+        },
+        {
+            "id": 120,
+            "title": "Realme Galaxy M32",
+            "brand": "Realme",
+            "price": 2635.88,
+            "category": "smartphone",
+            "img_number": 14
+        },
+        {
+            "id": 121,
+            "title": "Nokia Moto G31",
+            "brand": "Nokia",
+            "price": 2782.22,
+            "category": "smartphone",
+            "img_number": 15
+        },
+        {
+            "id": 122,
+            "title": "Multilaser Poco X4",
+            "brand": "Multilaser",
+            "price": 5531.56,
+            "category": "smartphone",
+            "img_number": 16
+        },
+        {
+            "id": 123,
+            "title": "Nokia K52",
+            "brand": "Nokia",
+            "price": 1829.92,
+            "category": "smartphone",
+            "img_number": 17
+        },
+        {
+            "id": 124,
+            "title": "LG Nord 2",
+            "brand": "LG",
+            "price": 2289.12,
+            "category": "smartphone",
+            "img_number": 18
+        },
+        {
+            "id": 125,
+            "title": "Samsung iPhone SE",
+            "brand": "Samsung",
+            "price": 4927.92,
+            "category": "smartphone",
+            "img_number": 19
+        },
+        {
+            "id": 126,
+            "title": "Multilaser Galaxy A32",
+            "brand": "Multilaser",
+            "price": 1144.89,
+            "category": "smartphone",
+            "img_number": 20
+        },
+        {
+            "id": 127,
+            "title": "Bose Charge 5",
+            "brand": "Bose",
+            "price": 121.36,
+            "category": "soundbox",
+            "img_number": 0
+        },
+        {
+            "id": 128,
+            "title": "Xiaomi Flip 5",
+            "brand": "Xiaomi",
+            "price": 645.89,
+            "category": "soundbox",
+            "img_number": 1
+        },
+        {
+            "id": 129,
+            "title": "Amazon SRS-XB13",
+            "brand": "Amazon",
+            "price": 246.69,
+            "category": "soundbox",
+            "img_number": 2
+        },
+        {
+            "id": 130,
+            "title": "Amazon Go 3",
+            "brand": "Amazon",
+            "price": 150.04,
+            "category": "soundbox",
+            "img_number": 3
+        },
+        {
+            "id": 131,
+            "title": "Philco PB100",
+            "brand": "Philco",
+            "price": 135.55,
+            "category": "soundbox",
+            "img_number": 4
+        },
+        {
+            "id": 132,
+            "title": "Sony SP256",
+            "brand": "Sony",
+            "price": 893.92,
+            "category": "soundbox",
+            "img_number": 5
+        },
+        {
+            "id": 133,
+            "title": "Multilaser Soundlink Mini",
+            "brand": "Multilaser",
+            "price": 554.62,
+            "category": "soundbox",
+            "img_number": 6
+        },
+        {
+            "id": 134,
+            "title": "Xiaomi BT7000",
+            "brand": "Xiaomi",
+            "price": 357.67,
+            "category": "soundbox",
+            "img_number": 7
+        },
+        {
+            "id": 135,
+            "title": "Xiaomi TWS Speaker",
+            "brand": "Xiaomi",
+            "price": 99.58,
+            "category": "soundbox",
+            "img_number": 8
+        },
+        {
+            "id": 136,
+            "title": "Sony Boom 2",
+            "brand": "Sony",
+            "price": 573.93,
+            "category": "soundbox",
+            "img_number": 9
+        },
+        {
+            "id": 137,
+            "title": "Xiaomi Clip 4",
+            "brand": "Xiaomi",
+            "price": 756.43,
+            "category": "soundbox",
+            "img_number": 10
+        },
+        {
+            "id": 138,
+            "title": "Bose Pulse 5",
+            "brand": "Bose",
+            "price": 1218.28,
+            "category": "soundbox",
+            "img_number": 11
+        },
+        {
+            "id": 139,
+            "title": "Multilaser Extreme 2",
+            "brand": "Multilaser",
+            "price": 887.06,
+            "category": "soundbox",
+            "img_number": 12
+        },
+        {
+            "id": 140,
+            "title": "Bose Xtreme 3",
+            "brand": "Bose",
+            "price": 348.26,
+            "category": "soundbox",
+            "img_number": 13
+        },
+        {
+            "id": 141,
+            "title": "Philips SoundCore 2",
+            "brand": "Philips",
+            "price": 213.5,
+            "category": "soundbox",
+            "img_number": 14
+        },
+        {
+            "id": 142,
+            "title": "Positivo Echo Dot",
+            "brand": "Positivo",
+            "price": 621.43,
+            "category": "soundbox",
+            "img_number": 15
+        },
+        {
+            "id": 143,
+            "title": "Sony Mi Speaker",
+            "brand": "Sony",
+            "price": 61.54,
+            "category": "soundbox",
+            "img_number": 16
+        },
+        {
+            "id": 144,
+            "title": "Xiaomi Party Box 110",
+            "brand": "Xiaomi",
+            "price": 1297.97,
+            "category": "soundbox",
+            "img_number": 17
+        },
+        {
+            "id": 145,
+            "title": "Sony SRS-XB33",
+            "brand": "Sony",
+            "price": 141.48,
+            "category": "soundbox",
+            "img_number": 18
+        },
+        {
+            "id": 146,
+            "title": "Multilaser PulseBox",
+            "brand": "Multilaser",
+            "price": 682.26,
+            "category": "soundbox",
+            "img_number": 19
+        },
+        {
+            "id": 147,
+            "title": "Philco Speaker Compact",
+            "brand": "Philco",
+            "price": 1216.47,
+            "category": "soundbox",
+            "img_number": 20
+        }
+    ]
+}
